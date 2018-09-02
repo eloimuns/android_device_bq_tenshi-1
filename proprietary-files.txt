@@ -1,5 +1,5 @@
 # ADSP
-bin/adsprpcd
+bin/adsprpcd:vendor/bin/adsprpcd
 vendor/lib/libadsprpc.so
 vendor/lib/libadsp_default_listener.so
 vendor/lib/libfastcvadsp_stub.so
@@ -49,7 +49,7 @@ etc/acdbdata/QRD/QRD_Headset_cal.acdb
 etc/acdbdata/QRD/QRD_Speaker_cal.acdb
 
 # Bluetooth
-bin/hci_qcomm_init
+bin/hci_qcomm_init:vendor/bin/hci_qcomm_init
 vendor/lib/libbtnv.so
 
 # BQ
@@ -61,7 +61,7 @@ etc/permissions/bq.software.qcom.n.tenshi.xml
 etc/permissions/bq.software.qcom.n.xml
 
 # CNE
-bin/cnd
+bin/cnd:vendor/bin/cnd
 etc/cne/SwimConfig.xml
 etc/cne/andsfCne.xml
 etc/permissions/ConnectivityExt.xml
@@ -79,8 +79,8 @@ vendor/lib/libwqe.so
 vendor/lib/libxml.so
 
 # Camera
-bin/mm-qcamera-app
-bin/mm-qcamera-daemon
+bin/mm-qcamera-app:vendor/bin/mm-qcamera-app
+bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon
 lib/hw/camera.msm8937.so
 lib/libmmcamera_interface.so
 lib/libmmjpeg_interface.so
@@ -274,10 +274,10 @@ vendor/lib/libmmcamera_isp_color_xform_encoder40.so
 vendor/lib/libmmcamera_isp_color_xform_viewfinder40.so
 
 # Charger
-bin/hvdcp_opti
+bin/hvdcp_opti:vendor/bin/hvdcp_opti
 
 # DPM
-bin/dpmd
+bin/dpmd:vendor/bin/dpmd
 etc/dpm/dpm.conf
 etc/dpm/nsrm/NsrmConfiguration.xml
 etc/permissions/com.qti.dpmframework.xml
@@ -293,7 +293,7 @@ vendor/lib/libdpmnsrm.so
 vendor/lib/libdpmtcm.so
 
 # DRM
-bin/qseecomd
+bin/qseecomd:vendor/bin/qseecomd
 vendor/bin/mdtpd
 vendor/bin/qseeproxydaemon
 vendor/lib/libcppf.so
@@ -322,16 +322,16 @@ lib/hw/fingerprint.msm8937.so
 lib/lib_fpc_tac_shared.so
 
 # FM
-bin/fm_qsoc_patches
+bin/fm_qsoc_patches:vendor/bin/fm_qsoc_patches
 
 # Gatekeeper
 vendor/lib/hw/gatekeeper.msm8937.so
 
 # GPS
-bin/loc_launcher
-bin/lowi-server
-bin/xtwifi-client
-bin/xtwifi-inet-agent
+bin/loc_launcher:vendor/bin/loc_launcher
+bin/lowi-server:vendor/bin/lowi-server
+bin/xtwifi-client:vendor/bin/xtwifi-client
+bin/xtwifi-inet-agent:vendor/bin/xtwifi-inet-agent
 etc/permissions/com.qti.location.sdk.xml
 etc/permissions/com.qualcomm.location.xml
 etc/permissions/izat.xt.srv.xml
@@ -460,8 +460,8 @@ vendor/lib/libconnctrl.so
 vendor/lib/libQtiTether.so
 
 # Perf
-bin/iop
-bin/msm_irqbalance
+bin/iop:vendor/bin/iop
+bin/msm_irqbalance:vendor/bin/msm_irqbalance
 vendor/bin/perfd
 vendor/lib/libqti_performance.so
 vendor/lib/libqti-iop.so
@@ -469,8 +469,8 @@ vendor/lib/libqti-iop-client.so
 vendor/lib/libqti-perfd-client.so
 
 # Peripheral manager
-bin/pm-proxy
-bin/pm-service
+bin/pm-proxy:vendor/bin/pm-proxy
+bin/pm-service:vendor/bin/pm-service
 vendor/lib/libperipheral_client.so
 
 # Postprocessing
@@ -481,8 +481,8 @@ vendor/bin/mm-pp-dpps
 vendor/lib/libdisp-aba.so
 
 # QMI
-bin/ATFWD-daemon
-bin/irsc_util
+bin/ATFWD-daemon:vendor/bin/ATFWD-daemon
+bin/irsc_util:vendor/bin/irsc_util
 etc/permissions/qti_permissions.xml
 vendor/lib/libdiag.so
 vendor/lib/libdsi_netctrl.so
@@ -511,11 +511,11 @@ vendor/lib/libvqzip.so
 -app/fastdormancy/fastdormancy.apk
 -app/QtiTelephonyService/QtiTelephonyService.apk
 -app/shutdownlistener/shutdownlistener.apk
-bin/ipacm-diag
-bin/netmgrd
-bin/radish
-bin/rmt_storage
-bin/tftp_server
+bin/ipacm-diag:vendor/bin/ipacm-diag
+bin/netmgrd:vendor/bin/netmgrd
+bin/radish:vendor/bin/radish
+bin/rmt_storage:vendor/bin/rmt_storage
+bin/tftp_server:vendor/bin/tftp_server
 etc/permissions/embms.xml
 #etc/permissions/qcnvitems.xml
 etc/permissions/qcrilhook.xml
@@ -566,7 +566,7 @@ vendor/lib/libscveTextReco.so
 vendor/lib/libscveTextReco_stub.so
 
 # Sensors
-bin/sensors.qcom
+bin/sensors.qcom:vendor/bin/sensors.qcom
 vendor/lib/hw/activity_recognition.msm8937.so
 vendor/lib/libsensor1.so
 vendor/lib/libsensor_reg.so
@@ -574,7 +574,7 @@ vendor/lib/sensor_calibrate.so
 vendor/lib/sensors.ssc.so
 
 # Subsystem restart
-bin/ssr_diag
+bin/ssr_diag:vendor/bin/ssr_diag
 
 # Thermal
 etc/thermal-engine.conf
@@ -584,11 +584,11 @@ vendor/lib/libthermalioctl.so
 
 # Time services
 -app/TimeService/TimeService.apk
-bin/time_daemon
+bin/time_daemon:vendor/bin/time_daemon
 -vendor/lib/libtime_genoff.so
 vendor/lib/libTimeService.so
 
 etc/firmware/ice40.bin
 
 # Wi-Fi
-bin/wcnss_service
+bin/wcnss_service:vendor/bin/wcnss_service
